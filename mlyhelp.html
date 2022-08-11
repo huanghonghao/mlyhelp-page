@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="keywords" content="机器人,网页机器人,机器人api,机器人接口,聊天机器人,智能客服,茉莉云,茉莉机器人,QQ机器人,微信机器人,robot,api">
+    <meta name="description" content="茉莉云官网，出生于2014年的新型机器人，广泛应用于各类网站客服、QQ机器人和微信公众平台。">
+    <title>帮助文档-茉莉云</title>
+    <link rel="icon" href="favicon.jpg">
+    <!-- 加载页面css开始 -->
+    <link rel='stylesheet' href='https://s1.mlyai.com/default/1.0.0525/css/common.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='https://s1.mlyai.com/default/1.0.0525/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='https://s1.mlyai.com/default/1.0.0525/font/iconfont.css' type='text/css' media='all' />
+    <!-- 加载页面css结束 -->
+    <!-- 加载页面js开始 -->
+    <script type='text/javascript' src='https://s1.mlyai.com/default/1.0.0525/js/main.js'></script>
+    <!-- 加载页面js结束 -->
+</head>
+<body class="light">
+
+<!-- 渲染模板片段开始 -->
+    <div class="docs page-index">
+        <div class="docs-container container">
+            <div class="docs-header" style="display: none">
+                <ul class="docs-nav">
+                    <li command="func" class="active">功能简介</li>
+                </ul>
+            </div>
+            <div id="func" class="docs-box">
+                <div class="docs-title">功能简介</div>
+                <div class="docs-content">
+                    <div class="dc-title">聊天插件</div>
+                    <p>AI聊天，与知识库灵活搭配，让你的机器人更具多元化。</p>
+                    <div class="dc-title">用户中心插件</div>
+                    <p>支持自定义经验别名、金币别名、等级经验规则，等级级别名指定等等。</p>
+                    <p><label>触发：</label>个人中心/财富榜/等级榜</p>
+                    <p class="wx-tip-red">用户中心插件只在群环境下生效</p>
+                    <div class="dc-title">签到插件</div>
+                    <p>我只能说签到功能很强，其它的自行体验，支持经验、金币配置，支持设置多种连签、排名奖励，支持文本模板和JSON（自定义）回复，未来还会支持图片模式。</p>
+                    <p><label>触发：</label>签到/签到榜
+                    <p class="wx-tip-red">签到插件只在群环境下生效</p>
+                    <div class="dc-title">天气预报</div>
+                    <p>全国天气预报查询，并且会提示未来的天气变化。</p>
+                    <p><label>触发：</label>天气/武汉天气</p>
+                    <p><label>回复：</label>武汉天气【周五~08月13日】：小雨，24℃，东北风（0-3级 微风  <5.4m/s）；温馨提示，4小时左右天气有变化：小雨转中雨。</p>
+                    <p class="wx-tip">天气预报支持多轮上下文场景对话</p>
+                    <div class="dc-title">手机号归属地查询</div>
+                    <p>可查询全国手机号归属地信息。</p>
+                    <p><label>触发：</label>手机号/归属地/sjh/mobile/phone查询</p>
+                    <p><label>回复：</label>手机号前缀：1867230，归属地：湖北武汉，运营商：联通</p>
+                    <p class="wx-tip">手机号归属地查询支持多轮上下文场景对话</p>
+                    <div class="dc-title">精选文案/一言</div>
+                    <p>精选一句话。</p>
+                    <p><label>触发：</label>一言/诗词一言/动画一言/漫画一言/游戏一言/文学一言/原创一言/网络一言/影视一言/网易云一言/哲学一言/抖机灵一言/其它一言</p>
+                    <p><label>回复：</label>两情若是久长时，又岂在朝朝暮暮。 《鹊桥仙》 - 秦观</p>
+                    <div class="dc-title">翻译功能</div>
+                    <p>通用翻译功能，几乎支持所有语种。</p>
+                    <p><label>触发：</label>进入翻译模式/翻译hello/Translate i miss you</p>
+                    <p>
+                        <label>回复：</label>
+                        <br/>译文：<br/>
+                        ----------------<br/>
+                        我想你<br/>
+                        ----------------<br/>
+                        回复q退出翻译模式，回复s:lang切换翻译目标语种。
+                    </p>
+                    <p class="wx-tip">翻译插件支持多轮上下文场景对话</p>
+                    <p><label>常见lang值对应的语种：</label></p>
+                    <table>
+                        <tr>
+                            <th>lang</th>
+                            <th>语种</th>
+                            <th>lang</th>
+                            <th>语种</th>
+                        </tr>
+                        <tr>
+                            <td>zh</td>
+                            <td>简体中文</td>
+                            <td>en</td>
+                            <td>英语</td>
+                        </tr>
+                        <tr>
+                            <td>yue</td>
+                            <td>粤语</td>
+                            <td>wyw</td>
+                            <td>文言文</td>
+                        </tr>
+                        <tr>
+                            <td>jp</td>
+                            <td>日语</td>
+                            <td>kor</td>
+                            <td>韩语</td>
+                        </tr>
+                        <tr>
+                            <td>fra</td>
+                            <td>法语</td>
+                            <td>spa</td>
+                            <td>西班牙语</td>
+                        </tr>
+                        <tr>
+                            <td>th</td>
+                            <td>泰语</td>
+                            <td>ara</td>
+                            <td>阿拉伯语</td>
+                        </tr>
+                        <tr>
+                            <td>ru</td>
+                            <td>俄语</td>
+                            <td>pt</td>
+                            <td>葡萄牙语</td>
+                        </tr>
+                        <tr>
+                            <td>de</td>
+                            <td>德语</td>
+                            <td>it</td>
+                            <td>意大利语</td>
+                        </tr>
+                        <tr>
+                            <td>el</td>
+                            <td>希腊语</td>
+                            <td>nl</td>
+                            <td>荷兰语</td>
+                        </tr>
+                        <tr>
+                            <td>pl</td>
+                            <td>波兰语</td>
+                            <td>dan</td>
+                            <td>丹麦语</td>
+                        </tr>
+                        <tr>
+                            <td>fin</td>
+                            <td>芬兰语</td>
+                            <td>cht</td>
+                            <td>繁体中文</td>
+                        </tr>
+                        <tr>
+                            <td>vie</td>
+                            <td>越南语</td>
+                            <td>san</td>
+                            <td>梵语</td>
+                        </tr>
+                        <tr>
+                            <td>swe</td>
+                            <td>瑞典语</td>
+                            <td>hu</td>
+                            <td>匈牙利语</td>
+                        </tr>
+                        <tr>
+                            <td>lat</td>
+                            <td>拉丁语</td>
+                            <td>cs</td>
+                            <td>捷克语</td>
+                        </tr>
+                    </table>
+                    <div class="dc-title">成语大全，支持成语接龙，查成语</div>
+                    <p>支持群成员一起成语接龙，也支持私聊接龙，还支持查询成语信息（出处、释义、举例）。</p>
+                    <p><label>触发：</label>成语接龙</p>
+                    <p>
+                        <label>回复：</label>
+                        <br/>成语接龙（编号23824）：<br/>
+                        ----------------------<br/>
+                        当前的成语：随侯之珠<br/>
+                        当前已接龙：0次<br/>
+                        ----------------------<br/>
+                        回复【q】退出成语接龙
+                    </p>
+                    <p><label>触发：</label>查成语丢三落四</p>
+                    <p>
+                        <label>回复：</label>
+                        <br/>成语”丢三落四“信息：<br/>
+                        ----------------------<br/>
+                        出处：清·曹雪芹《红楼梦》第六十七回咱们家没人，俗语说的‘夯雀儿先飞’，省的临时丢三落四的不齐全，令人笑话。”<br/>
+                        释义：形容做事马虎粗心，不是丢了这个，就是忘了那个。<br/>
+                        举例：无<br/>
+                        ----------------------
+                    </p>
+                    <p class="wx-tip">成语大全插件支持多轮上下文场景对话</p>
+                    <div class="dc-title">笑话大全插件</div>
+                    <p>有各种笑话，职场、校园、幽默、哲理、冷笑话等等。</p>
+                    <p><label>触发：</label>笑话/冷笑话/儿童笑话/哲理笑话/女人笑话/幽默笑话/恐怖笑话/文艺笑话/校园笑话/爆笑签名/爱情笑话/短信笑话/职场笑话/节日笑话</p>
+                    <p><label>回复：</label>
+                        <br/>让人恍然的几句幽默箴言<br/>
+                        ----------------------<br/>
+                        本质好的人很难做坏事，他们连自己那关都过不了。本质坏的人也很难改变，他们最多只是抑制自己一阵子罢了。所以要相信别人在做的努力，但不要尽信他们会改掉本质。<br/>
+                        ----------------------<br/>
+                        《哲理笑话》
+                    </p>
+                    <p class="wx-tip">笑话插件支持多轮上下文场景对话</p>
+                    <div class="dc-title">倒计时插件</div>
+                    <p>支持自定义一年365天，每时每刻的倒计时，并且支持公历/农历区分设置。</p>
+                    <p><label>触发：</label>元旦倒计时/国庆倒计时/高考倒计时</p>
+                    <p><label>回复：</label>距离高考还有87天12小时26分钟</p>
+                    <div class="dc-title">猜拳插件</div>
+                    <p>支持自定义胜率，自定义猜拳别名等。</p>
+                    <p><label>触发：</label>猜拳石头/猜拳布/猜拳布20</p>
+                    <p><label>回复：</label>你出的布，机器人出的石头，你赢啦，加20金币</p>
+                    <p class="wx-tip-red">猜拳插件只在群环境下生效</p>
+                    <div class="dc-title">人生重开模拟器插件</div>
+                    <p>这垃圾人生，一秒也不想呆了，欢迎重开！</p>
+                    <p><label>触发：</label>人生重开</p>
+                    <p><label>回复：</label>
+                        <br/>xxx，欢迎来到人生重开模拟器！<br/>
+                        -----------------------------<br/>
+                        1、普通10连抽（小盒子）<br/>
+                        2、豪华20连抽（随机）<br/>
+                        -----------------------------<br/>
+                        请回复编号选择天赋礼包。</p>
+                    <p class="wx-tip-red">因时间关系，此插件目前暂不支持自定义配置，后续将陆续完善各种配置，支持各种“魔改”，敬请期待！</p>
+                    <p class="wx-tip">目前发布的仅为体验版，如果您有什么好的建议，欢迎向我们反馈，交流方式请前往[关于茉莉]页面查看！</p>
+                    <div class="dc-title">其他功能</div>
+                    <p>如果你有好的想法或建议，欢迎向我们反馈，期待中（QQ群：273970059）；</p>
+                    <p>其他功能陆续完善中，敬请期待，已规划功能如下：</p>
+                    <ul class="memo-list">
+                        <li>数学计算</li>
+                        <li><s>笑话大全</s> 已完成</li>
+                        <li>故事大全</li>
+                        <li><s>成语接龙</s> 已完成</li>
+                        <li>ip查询</li>
+                        <li>身份证基本信息解析</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 渲染模板片段结束 -->
+</body>
+</html>
